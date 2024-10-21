@@ -9,7 +9,27 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(220);
 
-  print(mString);
+  textSize(16)
+
+  // print(mString);
+  print(mString, mString.length, mString.toLowerCase());
+
+  // textAlign(LEFT, TOP)
+  // text(mString,100,100)
+
+  for (let idx=0; idx< mString.length; id++){
+    let mChar = mString[idx];
+    let x = random(width);
+    let y = random(height);
+    if(mChar == 'a'){
+      textSize(64);
+    } else{
+      textSize(16);
+    }
+
+    text (mChar, x, y);
+
+  }
 }
 
 function draw() {}
